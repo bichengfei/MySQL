@@ -15,7 +15,7 @@
  
 ### 2. InnoDB 和 ACID 模型
 
-### 3. InnoDB 多版本控制
+### 3. InnoDB 多版本控制 -- @amlgithub
 
 ### 4. InnoDB 架构
 
@@ -33,7 +33,7 @@
      &nbsp;&nbsp;&nbsp;&nbsp;移动或复制 InnoDB 表  
      &nbsp;&nbsp;&nbsp;&nbsp;将表从 MyISAM 转换成 InnoDB  
      &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 中的 auto_increment 处理](./InnoDB/6.InnoDB中auto_increment处理（官网版）.md)
- - 6.2 索引  
+ - 6.2 索引  -- @[bichengfei](https://github.com/bichengfei)  
      &nbsp;&nbsp;&nbsp;&nbsp;聚集索引和二级索引  
      &nbsp;&nbsp;&nbsp;&nbsp;InnoDB 索引的物理结构  
      &nbsp;&nbsp;&nbsp;&nbsp;排序索引构建  
