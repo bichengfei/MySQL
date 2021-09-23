@@ -15,7 +15,7 @@
  
 ### 2. InnoDB 和 ACID 模型
 
-### 3. InnoDB 多版本控制 -- @amlgithub
+### 3. InnoDB 多版本控制 -- @[amlgithub](https://github.com/amlgithub)
 
 ### 4. InnoDB 架构
 
