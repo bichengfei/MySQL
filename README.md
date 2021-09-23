@@ -32,7 +32,7 @@
      &nbsp;&nbsp;&nbsp;&nbsp;导入 InnoDB 表  
      &nbsp;&nbsp;&nbsp;&nbsp;移动或复制 InnoDB 表  
      &nbsp;&nbsp;&nbsp;&nbsp;将表从 MyISAM 转换成 InnoDB  
-     &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 中的 auto_increment 处理](./InnoDB/6/6.1/6.1.InnoDB中auto_increment处理（官网版）.md)
+     &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 中的 auto_increment 处理](./InnoDB/6/6.1/6.1.InnoDB中auto_increment处理（官网版）.md)  -- @[bichengfei](https://github.com/bichengfei)  
  - 6.2 索引  -- @[bichengfei](https://github.com/bichengfei)  
      &nbsp;&nbsp;&nbsp;&nbsp;[聚集索引和二级索引](./InnoDB/6/6.2/6.2.聚集索引和二级索引.md)  
      &nbsp;&nbsp;&nbsp;&nbsp;InnoDB 索引的物理结构  
