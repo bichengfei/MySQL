@@ -35,10 +35,10 @@
      &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 中的 auto_increment 处理](./InnoDB/6/6.1/6.1.InnoDB中auto_increment处理（官网版）.md)  -- @[bichengfei](https://github.com/bichengfei)  
  - 6.2 索引  -- @[bichengfei](https://github.com/bichengfei)  
      &nbsp;&nbsp;&nbsp;&nbsp;[聚集索引和二级索引](./InnoDB/6/6.2/6.2.聚集索引和二级索引.md)  
-     &nbsp;&nbsp;&nbsp;&nbsp;InnoDB 索引的物理结构  
+     &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 索引的物理结构](./InnoDB/6/6.2/6.2.InnoDB索引的物理结构.md)  
      &nbsp;&nbsp;&nbsp;&nbsp;排序索引构建  
      &nbsp;&nbsp;&nbsp;&nbsp;InnoDB 全文索引  
- - 6.3 表空间  
+ - 6.3 [表空间](./InnoDB/6/6.3/6.3.表空间.md)  
      &nbsp;&nbsp;&nbsp;&nbsp;系统表空间  
      &nbsp;&nbsp;&nbsp;&nbsp;每个表的文件表空间  
      &nbsp;&nbsp;&nbsp;&nbsp;通用表空间  
@@ -46,8 +46,8 @@
      &nbsp;&nbsp;&nbsp;&nbsp;临时表空间  
  - 6.4 InnoDB 数据字典
  - 6.5 双写缓冲区
- - 6.6 重做日志
- - 6.7 撤销日志
+ - 6.6 [重做（redo）日志](./InnoDB/6/6.6/6.6.redo日志.md)
+ - 6.7 [撤销（undo）日志](./InnoDB/6/6.7/6.7.undo日志.md)
 ###  7. InnoDB 锁定和事务模型
 - 7.1 InnoDB 锁定
  - 7.2 InnoDB 事务模型  
