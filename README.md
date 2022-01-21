@@ -49,7 +49,7 @@
  - 6.6 [重做（redo）日志](./InnoDB/6/6.6/6.6.redo日志.md)
  - 6.7 [撤销（undo）日志](./InnoDB/6/6.7/6.7.undo日志.md)
 ###  7. InnoDB 锁定和事务模型
-- 7.1 InnoDB 锁定
+- 7.1 [InnoDB 锁定](./InnoDB/7/7.1.InnoDB锁定.md)
  - 7.2 InnoDB 事务模型  
      &nbsp;&nbsp;&nbsp;&nbsp;事务隔离级别  
      &nbsp;&nbsp;&nbsp;&nbsp;自动提交、提交和回滚  
