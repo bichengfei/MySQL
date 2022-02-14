@@ -1,6 +1,8 @@
+[MySQL :: MySQL 5.7 Reference Manual :: 8.8.2 EXPLAIN Output Format](https://dev.mysql.com/doc/refman/5.7/en/explain-output.html)
+
 `explain`语句提供有关 MySQl 如何执行语句的信息。`explain`适用于`select`,`delete`,`insert`,`update`,`replace`语句
 
-`explain`为在`select`语句中使用的每一个表生成一行信息，按照`MySQL`在处理语句时读取它们的顺序有序的展示。`MySQL 5.7`使用`nested-loop`解析所有的 `join`，这意味着`MySQL`从第一个表中读取一行，然后在第二个表中找到匹配的行......第三个表......，处理完所有的表后，`MySQL`输出指定的列，并返回到第一张表，找到所有匹配到列。（*这一段描述主要在讲`nested-loop`，属于系统设计中的经典设计，不懂的另行查阅*）
+`explain`为在`select`https://dev.mysql.com/doc/refman/5.7/en/explain-output.html语句中使用的每一个表生成一行信息，按照`MySQL`在处理语句时读取它们的顺序有序的展示。`MySQL 5.7`使用`nested-loop`解析所有的 `join`，这意味着`MySQL`从第一个表中读取一行，然后在第二个表中找到匹配的行......第三个表......，处理完所有的表后，`MySQL`输出指定的列，并返回到第一张表，找到所有匹配到列。（*这一段描述主要在讲`nested-loop`，属于系统设计中的经典设计，不懂的另行查阅*）
 
 `explain`输出包括分区信息，对于`select`语句，`explain`还会生成等同于`show warnings`的额外信息
 
@@ -353,6 +355,12 @@ select * from tbl_name where key_part1 = 10 and key_part2 in (10, 20, 30);
 
 + 索引是覆盖索引并且可以满足表中所需的所有数据，则仅扫描索引树。在这种情况下，extra 列显示 `Using index`。因为索引通常比整张表的空间更小，所以索引扫描通常比 all 要快
 
-+ 
++ 按照索引的顺序执行全表扫描来查找数据。Extra 列不会展示 Uses index
+
+当查询仅使用单个索引的列时，MySQL 可以使用此连接类型
 
 ### all
+
+对先前表中对每个行组合进行全表扫描。如果该表是第一个未被标记为 const 的表，这通常不好，在其他情况下，情况会更糟糕。你可以通过创建索引来避免使用 all，从而从基于先前表的常量值或列值来检索行
+
+## Extra 列解释
