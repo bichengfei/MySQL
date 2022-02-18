@@ -1,4 +1,4 @@
-# 8.2.1 优化 SELECT 语句
+# 优化 SELECT 语句
 
 + where 子句优化
 

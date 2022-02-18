@@ -1,4 +1,4 @@
-# WHERE 子句优化
+# 8.2.1.1 WHERE 子句优化
 
 本节讨论处理 where 子句时进行的优化。这些示例使用 select 语句，但是同样适用于 delete 和 update 中的 where 子句
 

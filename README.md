@@ -1,7 +1,5 @@
 # MySQL
 
-基于 MySQL 5.7 的官方文档的 InnoDB 部分翻译，部分篇幅会有个人见解
-
 官网地址：https://dev.mysql.com/doc/refman/5.7/en/preface.html
 
 ## 8  优化
@@ -16,15 +14,9 @@
 
 + 8.2.1.2 [范围优化](./optimization/Optimizing%20SQL%20Statements/Optimizing%20SELECT%20Statement/Range%20Optimization.md)
 
-
-
-
-
-
-
-
-
 ## InnoDB 存储引擎
+
+基于 MySQL 5.7 的官方文档的 InnoDB 部分翻译，部分篇幅会有个人见解
 
 ### 1 InnoDB 简介
 
