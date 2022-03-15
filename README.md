@@ -4,6 +4,8 @@
 
 ## 8  优化
 
+此篇章基于 MySQL 8.0 版本
+
 ### 8.1 [优化概述](./optimization/index.md)
 
 ### 8.2  [优化 SQL 语句](./optimization/Optimizing%20SQL%20Statements/index.md)
@@ -14,11 +16,17 @@
 
 + 8.2.1.2 [范围优化](./optimization/Optimizing%20SQL%20Statements/Optimizing%20SELECT%20Statement/Range%20Optimization.md)
 
-## InnoDB 存储引擎
+### 8.8 了解查询执行计划
+
+#### 8.8.1 使用  explain 优化查询
+
+#### 8.8.2 [explain 输出格式](./optimization/Understanding%20the%20Query%20Execution%20Plan/EXPLAIN%20Output%20Format.md)
+
+## 15 InnoDB 存储引擎
 
 基于 MySQL 5.7 的官方文档的 InnoDB 部分翻译，部分篇幅会有个人见解
 
-### 1 InnoDB 简介
+### 15.1 InnoDB 简介
 
 - 1.1 使用 InnoDB  表的好处
 - 1.2 InnoDB 表的最佳实践
@@ -26,20 +34,20 @@
 - 1.4 使用 InnoDB 进行测试和基准测试
 - 1.5 关闭 InnoDB
 
-### 2. InnoDB 和 ACID 模型
+### 15.2 InnoDB 和 ACID 模型
 
-### 3. InnoDB 多版本控制 -- @[amlgithub](https://github.com/amlgithub)
+### 15.3. InnoDB 多版本控制 -- @[amlgithub](https://github.com/amlgithub)
 
-### 4. InnoDB 架构
+### 15.4. InnoDB 架构
 
-### 5. InnoDB 内存结构
+### 15.5. InnoDB 内存结构
 
 - 5.1 缓冲池
 - 5.2 更改缓冲区
 - 5.3 自适应哈希索引
 - 5.4 日志缓冲区
 
-### 6. InnoDB 磁盘结构
+### 15.6. InnoDB 磁盘结构
 
 - 6.1 表  
     &nbsp;&nbsp;&nbsp;&nbsp;创建 InnoDB 表  
@@ -70,7 +78,7 @@
 
 - 6.7 [撤销（undo）日志](./InnoDB/6/6.7/6.7.undo日志.md)
   
-  ### 7. InnoDB 锁定和事务模型
+  ### 15.7. InnoDB 锁定和事务模型
   
   - 7.1 [InnoDB 锁定](./InnoDB/7/7.1.InnoDB锁定.md)
 
@@ -89,7 +97,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;死锁检测  
     &nbsp;&nbsp;&nbsp;&nbsp;如何最小化和处理死锁  
 
-### 8. InnoDB 配置
+### 15.8. InnoDB 配置
 
 - 8.1 InnoDB 启动配置
 - 8.2 为只读操作配置 InnoDB
@@ -107,7 +115,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;估计 InnoDB 表的 analyze table 复杂性  
 - 8.12 配置索引页的合并阀值
 
-### 9. InnoDB 表和页面压缩
+### 15.9. InnoDB 表和页面压缩
 
 - 9.1 InnoDB 表压缩  
     &nbsp;&nbsp;&nbsp;&nbsp;表压缩概述  
@@ -119,7 +127,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;SQL 压缩语法警告与错误  
 - 9.2 InnoDB 页面压缩
 
-### 10. InnoDB 文件格式管理
+### 15.10. InnoDB 文件格式管理
 
 - 10.1 启用文件格式
 - 10.2 验证文件格式兼容性  
@@ -128,9 +136,9 @@
 - 10.3 识别正在使用的文件格式
 - 10.4 修改文件格式
 
-### 11. InnoDB 行格式
+### 15.11. InnoDB 行格式
 
-### 12. InnoDB 磁盘 I/O 和文件空间管理
+### 15.12. InnoDB 磁盘 I/O 和文件空间管理
 
 - 12.1 InnoDB 磁盘 I/O  
 - 12.2 文件空间管理  
@@ -138,7 +146,7 @@
 - 12.4 对表进行碎片整理
 - 12.5 使用 truncate table 回收磁盘空间
 
-### 13. InnoDB 和在线 DDL
+### 15.13. InnoDB 和在线 DDL
 
 - 13.1 在线 DDL 操作
 - 13.2 在线 DDL 性能和并发
@@ -147,11 +155,11 @@
 - 13.5 在线 DDL 失败条件
 - 13.6 在线 DDL 限制
 
-### 14. InnoDB 静态数据加密
+### 15.14. InnoDB 静态数据加密
 
-### 15. InnoDB 启动选项和系统变量
+### 15.15. InnoDB 启动选项和系统变量
 
-### 16. InnoDB 的 information_schema 表
+### 15.16. InnoDB 的 information_schema 表
 
 - 16.1 InnoDB 的 information_schema 压缩表  
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InnoDB_cmp 和 InnoDB_cmp_reset  
@@ -168,25 +176,25 @@
 - 16.7 InnoDB information_schema 临时表信息表
 - 16.8 从 information_schema.files 检索 InnoDB 表空间元数据
 
-### 17. InnoDB 与 MySQL_Performance Schema 的集成
+### 15.17. InnoDB 与 MySQL_Performance Schema 的集成
 
 - 17.1 使用性能模式监控 InnoDB 表的 alter table 进度
 - 17.2 使用性能监控模式监控 InnoDB Mutex 等待
 
-### 18. InnoDB 监视器
+### 15.18. InnoDB 监视器
 
 - 18.1 InnoDB 监视器类型
 - 18.2 启用 InnoDB 监视器
 - 18.3 InnoDB 标准监视器和锁定监视器输出
 
-### 19. InnoDB 备份和恢复
+### 15.19. InnoDB 备份和恢复
 
 - 19.1 InnoDB 备份
 - 19.2 InnoDB 恢复
 
-### 20. InnoDB 和 MySQL 复制
+### 15.20. InnoDB 和 MySQL 复制
 
-### 21. InnoDB 内存缓存插件
+### 15.21. InnoDB 内存缓存插件
 
 - 21.1 InnoDB memcached 插件的好处
 - 21.2 InnoDB 内存缓存架构
@@ -203,7 +211,7 @@
 - 21.7 InnoDB memcached 插件内部
 - 21.8 InnoDB memcached 插件故障排查
 
-### 22. InnoDB 故障排查
+### 15.22. InnoDB 故障排查
 
 - 22.1 对 InnoDB I/O 问题进行故障排除
 
@@ -213,6 +221,26 @@
 
 - 22.4 InnoDB 错误处理
   
-  ### 23. InnoDB Limits
+  ### 15.23. InnoDB Limits
 
-### 24 InnoDB Restrictions and Limitations
+### 15.24 InnoDB Restrictions and Limitations
+
+### 23 [MySQL NDB Cluster 8.0](./MySQL%20NDB%20Cluster%208.0/index.md)
+
+#### 23.1 [一般信息](./MySQL%20NDB%20Cluster%208.0/General%20Information.md)
+
+#### 23.2 [NDB 集群概述](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/index.md)
+
+##### 23.2.1 [NDB 集群核心概念](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Core%20Concepts.md)
+
+#### 23.3 NDB 集群安装
+
+#### 23.4 NDB 集群的配置
+
+#### 23.5 NDB 集群程序
+
+#### 23.6 NDB 集群的管理
+
+#### 23.7 NDB 集群复制
+
+#### 23.8 NDB 集群发行说明
