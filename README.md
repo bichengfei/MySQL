@@ -233,6 +233,22 @@
 
 ##### 23.2.1 [NDB 集群核心概念](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Core%20Concepts.md)
 
+##### 23.2.2 [NDB 集群节点、节点组、片段副本和分区](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Nodes,Node%20Groups,Fragment%20Replicas,and%20Partitions.md)
+
+23.2.3 NDB 集群硬件、软件和网络要求
+
+23.2.4 NDB 集群中的新功能
+
+23.2.5 NDB 8.0 中添加、弃用或删除的选项、变量和参数
+
+23.2.6 [MySQL 服务器使用 InnoDB 与 NDB 集群的比较](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/index.md)
+
++ 23.2.6.1 [NDB 与 InnoDB 存储引擎之间的差异](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/Differences%20Between%20the%20NDB%20and%20InnoDB%20Storage%20Engins.md)
+
++ 23.2.6.2 [NDB 和 InnoDB 工作负载](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/NDB%20and%20InnoDB%20Workloads.md)
+
++ 23.2.6.3 NDB [和 InnoDB 功能使用总结](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/NDB%20and%20InnoDB%20Feature Usage%20Summary.md)
+
 #### 23.3 NDB 集群安装
 
 #### 23.4 NDB 集群的配置

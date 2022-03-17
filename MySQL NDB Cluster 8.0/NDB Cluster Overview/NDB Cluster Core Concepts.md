@@ -61,8 +61,6 @@ NDB Cluster 还支持使用 Node.js 以 JavaScript 编写的应用程序。适�
 
 Oracle 还提供 MySQL Cluster Manager，它提供了一个高级命令行界面，简化了许多复杂的 NDB Cluster 管理任务，例如重新启动具有大量节点的 NDB Cluster。MySQL Cluster Manager 客户端还支持获取和设置大多数节点配置参数的值以及与 NDB Cluster 相关的[**mysqld服务器选项和变量的命令。**](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html "4.3.1 mysqld——MySQL 服务器")MySQL Cluster Manager 1.4.8 为 NDB 8.0 提供实验性支持。有关详细信息，请参阅[MySQL Cluster Manager 1.4.8 用户手册](https://dev.mysql.com/doc/mysql-cluster-manager/1.4/en/)。
 
-
-
 ### 事件日志（Event logs）
 
 NDB 集群按类别（启动、关闭、错误、检查点等）、优先级、严重性记录事件。所有可报告事件的完整列表可以在 [第 23.6.3 节，“在 NDB Cluster 中生成的事件报告”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-event-reports.html "23.6.3 NDB Cluster 中生成的事件报告")中找到。事件日志是此处列出的两种类型：
