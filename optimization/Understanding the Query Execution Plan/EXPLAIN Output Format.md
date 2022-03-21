@@ -443,3 +443,89 @@ explain insert into t values (10);
 ```
 
 ### Not exists (json 属性: message)
+
+
+
+### Plan is not read yet
+
+
+
+### Range checked for each record (index map: N)
+
+
+
+### Recursive
+
+
+
+### Rematerialize
+
+
+
+### Scaned N databases
+
+
+
+### select tables optimized away
+
+
+
+### Skip_open_table, Open_frm_only, Open_full_table
+
+
+
+### Start temporary, End temporary
+
+
+
+### unique row not found
+
+
+
+### Using filesort
+
+
+
+### using index
+
+
+
+### Using index condition
+
+
+
+### Using index for group-by
+
+
+
+### Using index for skip scan
+
+
+
+### Using join buffer
+
+
+
+### Using MRR
+
+
+
+### Using sort_union(...), Using union(...), Using intersect(...)
+
+
+
+### Using temporary
+
+
+
+### Using where
+
+
+
+### Using where with pushed condition
+
+此项仅适用于 NDB 表。这意味着 NDB 集群正在使用条件下推优化来提升非索引列和常量之间直接比较的效率。在这种请宽下，条件被“下推”到集群的数据节点，并同时在数据节点上进行评估。这消除列通过网络发送不匹配行的需要，并且可以将类查询速度提高 5 到 10 倍。有关详细信息，请参阅 [第 8.2.1.5 节，“引擎条件下推优化”](https://dev.mysql.com/doc/refman/8.0/en/engine-condition-pushdown-optimization.html "8.2.1.5 发动机工况下推优化")。
+
+### Zero limit
+
+该查询有一个`LIMIT 0`子句，不能选择任何行。

@@ -235,21 +235,73 @@
 
 ##### 23.2.2 [NDB 集群节点、节点组、片段副本和分区](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Nodes,Node%20Groups,Fragment%20Replicas,and%20Partitions.md)
 
-23.2.3 NDB 集群硬件、软件和网络要求
+##### 23.2.3 NDB 集群硬件、软件和网络要求
 
-23.2.4 NDB 集群中的新功能
+##### 23.2.4 NDB 集群中的新功能
 
-23.2.5 NDB 8.0 中添加、弃用或删除的选项、变量和参数
+##### 23.2.5 NDB 8.0 中添加、弃用或删除的选项、变量和参数
 
-23.2.6 [MySQL 服务器使用 InnoDB 与 NDB 集群的比较](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/index.md)
+##### 23.2.6 [MySQL 服务器使用 InnoDB 与 NDB 集群的比较](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/index.md)
 
-+ 23.2.6.1 [NDB 与 InnoDB 存储引擎之间的差异](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/Differences%20Between%20the%20NDB%20and%20InnoDB%20Storage%20Engins.md)
++ 23.2.6.1 [NDB 与 InnoDB 存储引擎之间的差异](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/Differences%20Between%20the%20NDB%20and%20InnoDB%20Storage%20Engins.md)
 
-+ 23.2.6.2 [NDB 和 InnoDB 工作负载](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/NDB%20and%20InnoDB%20Workloads.md)
++ 23.2.6.2 [NDB 和 InnoDB 工作负载](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/NDB%20and%20InnoDB%20Workloads.md)
 
-+ 23.2.6.3 NDB [和 InnoDB 功能使用总结](./MySQL%20NDB%20Cluster 8.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/NDB%20and%20InnoDB%20Feature Usage%20Summary.md)
++ 23.2.6.3 [NDB 和 InnoDB 功能使用总结](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/MySQL%20Server%20Using%20InnoDB%20Compared%20with%20NDB%20Cluster/NDB%20and%20InnoDB%20Feature%20Usage%20Summary.md)
 
-#### 23.3 NDB 集群安装
+##### 23.2.7 NDB 集群已知的限制
+
++ 23.2.7.1 NDB 集群中不符合的 SQL 语法
+
++ 23.2.7.2 NDB 集群与标准 MySQL  限制的限制和差异
+
++ 23.2.7.3 NDB 集群中与事务处理相关的限制
+
++ 23.2.7.4 NDB 集群错误处理
+
++ 23.2.7.5 与 NDB 集群中的数据库对象相关的限制
+
++ 23.2.7.6 与 NDB 集群中不支持或缺少的功能
+
++ 23.2.7.7 与 NDB 集群中的性能相关的限制
+
++ 23.2.7.8 NDB 集群独有的问题
+
++ 23.2.7.9 与 NDB Cluster 磁盘数据存储相关的限制
+
++ 23.2.7.10 与多个 NDB 集群节点相关的限制
+
++ 23.2.7.11 NDB 8.0 集群中解决的以前的 NDB 集群的问题
+
+#### 23.3 [NDB 集群安装](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/index.md)
+
+##### 23.3.1 [在 Linux 上安装 NDB 集群](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/index.md)
+
+./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/
+
++ [在 Linux 上安装 NDB 集群二进制版本](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/Installing%20an%20NDB%20Cluster%20Binary%20Release%20on%20Linux.md)
+
++ 从 RPM 安装 NDB Cluster
+
++ 使用 .deb 文件安装 NDB Cluster
+
++ 在 Linux 上从源代码构建 NDB 集群
+
+##### 23.3.2 在 Windows 上安装 NDB Cluster
+
+##### 23.3.3 NDB 集群的初始配置
+
+##### 23.3.4 NDB 集群的初始启动
+
+##### 23.3.5 带有表和数据的 NDB 集群示例
+
+##### 23.3.6 NDB 集群的安全关闭和重启
+
+##### 23.3.7 升级和降级 NDB 集群
+
+##### 23.3.8 NDB 集群自动安装程序（不再支持）
+
+./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/
 
 #### 23.4 NDB 集群的配置
 

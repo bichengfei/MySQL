@@ -19,7 +19,7 @@ NDB Cluster 的 "Cluster" 部分独立于 MySQL 服务端进行配置。在 NDB 
 
 + 管理节点 (Management node)：此类节点的作用是管理 NDB Cluster 中的其它节点。执行诸如提供配置数据、启动和停止节点、执行备份等功能。因为这种节点类型管理其它节点的配置，所以应该首先启动这种类型的节点，然后再启动任何其它节点。使用`ndb_mgmd`启动管理节点。
 
-+ 数据节点 (Data node)：这种类型的节点存储集群数据。数据节点的数量 = 分区数量 * 副本数量（请参阅[第 23.2.2 节，“NDB 集群节点、节点组、片段副本和分区”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-nodes-groups.html "23.2.2 NDB Cluster 节点、节点组、片段副本和分区")。例如，对于有两个分区，两个副本的表，你需要四个数据节点。一个副本足以存储数据，但不提供冗余。因此，建议具有两个或更多的副本以提供冗余，从而提高可用性。使用命令 ndbd （请参阅[第 23.5.1 节，“ndbd - NDB Cluster 数据节点守护程序”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-programs-ndbd.html "23.5.1 ndbd — NDB 集群数据节点守护进程")）或 ndbmtd （请参阅 [第 23.5.3 节，“ndbmtd - NDB Cluster 数据节点守护程序（多线程）”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-programs-ndbmtd.html "23.5.3 ndbmtd — NDB 集群数据节点守护进程（多线程）")）启动数据节点。
++ 数据节点 (Data node)：这种类型的节点存储集群数据。数据节点的数量 = 分区数量 * 副本数量（请参阅[第 23.2.2 节，“NDB 集群节点、节点组、片段副本和分区”](./NDB%20Cluster%20Nodes,Node%20Groups,Fragment%20Replicas,and%20Partitions.md)。例如，对于有两个分区，两个副本的表，你需要四个数据节点。一个副本足以存储数据，但不提供冗余。因此，建议具有两个或更多的副本以提供冗余，从而提高可用性。使用命令 ndbd （请参阅[第 23.5.1 节，“ndbd - NDB Cluster 数据节点守护程序”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-programs-ndbd.html "23.5.1 ndbd — NDB 集群数据节点守护进程")）或 ndbmtd （请参阅 [第 23.5.3 节，“ndbmtd - NDB Cluster 数据节点守护程序（多线程）”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-programs-ndbmtd.html "23.5.3 ndbmtd — NDB 集群数据节点守护进程（多线程）")）启动数据节点。
   
   NDB Cluster 表通常存储在内存中而不是磁盘上（这就是我们将 NDB Cluster 称为内存数据库的原因）。但是，一些 NDB Cluster 数据可以存储在磁盘上；有关更多信息，请参阅 [第 23.6.10 节，“NDB Cluster 磁盘数据表”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-disk-data.html "23.6.10 NDB Cluster 磁盘数据表")。
 

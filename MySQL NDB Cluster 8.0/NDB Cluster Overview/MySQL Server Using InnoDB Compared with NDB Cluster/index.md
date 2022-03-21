@@ -6,7 +6,7 @@ MySQL Server 在存储引擎中提供了多种选择。由于 NDB 和 InnoDB 都
 
 NDB 8.0 集群使用基于 MySQL 8.0 的 mysqld，包括了对 InnoDB 1.1 的支持。虽然剋在 NDB 集群中使用 InnoDB 表，但此类表不是集群的。NDB Cluster 8.0发行版中的程序或库也不能与MySQL Server 8.0一起使用，反之亦然。
 
-虽然某些类型的通用业务程序可以在 NDB 集群和 MySQL (最有可能使用 InnoDB 引擎) 上运行，但是在体系结构和实现方面还是存在一些重要差异。[第 23.2.6.1 节，“NDB 和 InnoDB 存储引擎之间的差异”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-ndb-innodb-engines.html "23.2.6.1 NDB 和 InnoDB 存储引擎的区别")，提供了这些差异的摘要。由于差异，一些使用场景显然更适合一种引擎或另一种；请参阅 [第 23.2.6.2 节，“NDB 和 InnoDB 工作负载”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-ndb-innodb-workloads.html "23.2.6.2 NDB 和 InnoDB 工作负载")，这反过来又会影响到程序更适合使用 NDB 或 InnoDB；请参阅 [第 23.2.6.3 节，“NDB 和 InnoDB 功能使用摘要”](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-ndb-innodb-usage.html "23.2.6.3 NDB 和 InnoDB 功能使用总结")，用于比较每种在常见类型的数据库应用程序中的相对适用性。
+虽然某些类型的通用业务程序可以在 NDB 集群和 MySQL (最有可能使用 InnoDB 引擎) 上运行，但是在体系结构和实现方面还是存在一些重要差异。[第 23.2.6.1 节，“NDB 和 InnoDB 存储引擎之间的差异”](./Differences%20Between%20the%20NDB%20and%20InnoDB%20Storage%20Engins.md)，提供了这些差异的摘要。由于差异，一些使用场景显然更适合一种引擎或另一种；请参阅 [第 23.2.6.2 节，“NDB 和 InnoDB 工作负载”](./NDB%20and%20InnoDB%20Workloads.md)，这反过来又会影响到程序更适合使用 NDB 或 InnoDB；请参阅 [第 23.2.6.3 节，“NDB 和 InnoDB 功能使用总结”](./NDB%20and%20InnoDB%20Feature%20Usage%20Summary.md)，用于比较每种在常见类型的数据库应用程序中的相对适用性。
 
 有关 存储引擎[`NDB`](https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster.html "第23章 MySQL NDB Cluster 8.0")和 [`MEMORY`](https://dev.mysql.com/doc/refman/8.0/en/memory-storage-engine.html "16.3 MEMORY存储引擎")存储引擎的相关特征的信息，请参阅 [何时使用 MEMORY 或 NDB Cluster](https://dev.mysql.com/doc/refman/8.0/en/memory-storage-engine.html#memory-storage-engine-compared-cluster "何时使用 MEMORY 或 NDB Cluster")。
 
