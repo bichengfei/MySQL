@@ -49,53 +49,75 @@
 
 ### 15.6. InnoDB 磁盘结构
 
-- 6.1 表  
-    &nbsp;&nbsp;&nbsp;&nbsp;创建 InnoDB 表  
-    &nbsp;&nbsp;&nbsp;&nbsp;在外部创建表  
-    &nbsp;&nbsp;&nbsp;&nbsp;导入 InnoDB 表  
-    &nbsp;&nbsp;&nbsp;&nbsp;移动或复制 InnoDB 表  
-    &nbsp;&nbsp;&nbsp;&nbsp;将表从 MyISAM 转换成 InnoDB  
-    &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 中的 auto_increment 处理](./InnoDB/6/6.1/6.1.InnoDB中auto_increment处理（官网版）.md)  -- @[bichengfei](https://github.com/bichengfei)  
+#### 15.6.1 表
 
-- 6.2 索引  -- @[bichengfei](https://github.com/bichengfei)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[聚集索引和二级索引](./InnoDB/6/6.2/6.2.聚集索引和二级索引.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[InnoDB 索引的物理结构](./InnoDB/6/6.2/6.2.InnoDB索引的物理结构.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;排序索引构建  
-    &nbsp;&nbsp;&nbsp;&nbsp;InnoDB 全文索引  
++ 创建 InnoDB 表  
 
-- 6.3 [表空间](./InnoDB/6/6.3/6.3.表空间.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[系统表空间](./InnoDB/6/6.3/6.3.表空间.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[每个表的文件表空间](./InnoDB/6/6.3/6.3.表空间.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[通用表空间](./InnoDB/6/6.3/6.3.表空间.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[撤销表空间](./InnoDB/6/6.3/6.3.表空间.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[临时表空间](./InnoDB/6/6.3/6.3.表空间.md)  
++ 在外部创建表  
 
-- 6.4 InnoDB 数据字典
++ 导入 InnoDB 表  
 
-- 6.5 双写缓冲区
++ 移动或复制 InnoDB 表  
 
-- 6.6 [重做（redo）日志](./InnoDB/6/6.6/6.6.redo日志.md)
++  [InnoDB 中的 auto_increment 处理](./InnoDB/6/6.1/6.1.InnoDB%E4%B8%ADauto_increment%E5%A4%84%E7%90%86%EF%BC%88%E5%AE%98%E7%BD%91%E7%89%88%EF%BC%89.md)
 
-- 6.7 [撤销（undo）日志](./InnoDB/6/6.7/6.7.undo日志.md)
-  
-  ### 15.7. InnoDB 锁定和事务模型
-  
-  - 7.1 [InnoDB 锁定](./InnoDB/7/7.1.InnoDB锁定.md)
+#### 15.6.2 索引
 
-- 7.2 InnoDB 事务模型  
-    &nbsp;&nbsp;&nbsp;&nbsp;事务隔离级别  
-    &nbsp;&nbsp;&nbsp;&nbsp;自动提交、提交和回滚  
-    &nbsp;&nbsp;&nbsp;&nbsp;一致的非锁定读取  
-    &nbsp;&nbsp;&nbsp;&nbsp;锁定读取  
++ [聚集索引和二级索引](./InnoDB/6/6.2/6.2.聚集索引和二级索引.md)  
 
-- 7.3 InnoDB 中不同 SQL 语句设置的锁
++ [InnoDB 索引的物理结构](./InnoDB/6/6.2/6.2.InnoDB索引的物理结构.md)  
 
-- 7.4 幻影行
++ 排序索引构建  
 
-- 7.5 InnoDB 中的死锁  
-    &nbsp;&nbsp;&nbsp;&nbsp;InnoDB 死锁示例  
-    &nbsp;&nbsp;&nbsp;&nbsp;死锁检测  
-    &nbsp;&nbsp;&nbsp;&nbsp;如何最小化和处理死锁  
++ InnoDB 全文索引  
+
+#### 15.6.3 [表空间](./InnoDB/6/6.3/6.3.表空间.md)
+
++ [系统表空间](./InnoDB/6/6.3/6.3.表空间.md)  
+
++ [每个表的文件表空间](./InnoDB/6/6.3/6.3.表空间.md)  
+
++ [通用表空间](./InnoDB/6/6.3/6.3.表空间.md)  
+
++ [撤销表空间](./InnoDB/6/6.3/6.3.表空间.md) 
+
++ [临时表空间](./InnoDB/6/6.3/6.3.表空间.md)  
+
+#### 15.6.4 InnoDB 数据字典
+
+#### 15.6.5 双写缓冲区
+
+#### 15.6.6 [重做（redo）日志](./InnoDB/6/6.6/6.6.redo日志.md)
+
+#### 15.6.7 [撤销（undo）日志](./InnoDB/6/6.7/6.7.undo日志.md)
+
+### 15.7. [InnoDB 锁定和事务模型](./InnoDB/15.7/index.md)
+
+#### 15.7.1 [InnoDB 锁定](./InnoDB/15.7/15.7.1.InnoDB锁定.md)
+
+#### 15.7.2 [InnoDB 事务模型](./InnoDB/15.7/15.7.2.InnoDB事务模型/index.md)
+
++ 15.7.2.1 [事务隔离级别](./InnoDB/15.7/15.7.2.InnoDB事务模型/15.7.2.1.事务隔离级别.md)
+
++ 15.7.2.2 [自动提交、提交和回滚](./InnoDB/15.7/15.7.2.InnoDB事务模型/15.7.2.2.自动提交、提交和回滚.md)
+
++ 15.7.2.3 [一致的非锁定读取](./InnoDB/15.7/15.7.2.InnoDB事务模型/15.7.2.3.一致的非锁定读取.md)
+
++ 15.7.2.4 [锁定读取](./InnoDB/15.7/15.7.2.InnoDB事务模型/15.7.2.4.锁定读取.md)
+
+#### 15.7.3 [InnoDB 中不同 SQL 语句设置的锁](./InnoDB/15.7/15.7.3.InnoDB中不同SQL语句设置的锁.md)
+
+#### 15.7.4 [幻影行](./InnoDB/15.7/15.7.4.幻影行.md)
+
+#### 15.7.5 [InnoDB 中的死锁](./InnoDB/15.7/15.7.5.InnoDB中的死锁/index.md)
+
++ 15.7.5.1 [InnoDB 死锁示例](./InnoDB/15.7/15.7.5.InnoDB中的死锁/15.7.5.1.InnoDB死锁示例.md)
+
++ 15.7.5.2 [死锁检测](./InnoDB/15.7/15.7.5.InnoDB中的死锁/15.7.5.2.死锁检测.md)
+
++ 15.7.5.3 [如何最小化和处理死锁](./InnoDB/15.7/15.7.5.InnoDB中的死锁/15.7.5.3.如何最小化和处理死锁.md)
+
+#### 15.7.6 [事务调度](./InnoDB/15.7/15.7.6.事务调度.md)
 
 ### 15.8. InnoDB 配置
 
@@ -277,8 +299,6 @@
 
 ##### 23.3.1 [在 Linux 上安装 NDB 集群](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/index.md)
 
-./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/
-
 + [在 Linux 上安装 NDB 集群二进制版本](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/Installing%20an%20NDB%20Cluster%20Binary%20Release%20on%20Linux.md)
 
 + 从 RPM 安装 NDB Cluster
@@ -289,19 +309,17 @@
 
 ##### 23.3.2 在 Windows 上安装 NDB Cluster
 
-##### 23.3.3 NDB 集群的初始配置
+##### 23.3.3 [NDB 集群的初始配置](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/Initial%20Configuration%20of%20NDB%20Cluster.md)
 
-##### 23.3.4 NDB 集群的初始启动
+##### 23.3.4 [NDB 集群的初始启动](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/Initial%20Startup%20of%20NDB%20Cluster.md)
 
-##### 23.3.5 带有表和数据的 NDB 集群示例
+##### 23.3.5 [带有表和数据的 NDB 集群示例](./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/Installation%20of%20NDB%20Cluster%20on%20Linux/NDB%20Cluster%20Example%20with%20Tables%20and%20Data.md)
 
 ##### 23.3.6 NDB 集群的安全关闭和重启
 
 ##### 23.3.7 升级和降级 NDB 集群
 
 ##### 23.3.8 NDB 集群自动安装程序（不再支持）
-
-./MySQL%20NDB%20Cluster%208.0/NDB%20Cluster%20Overview/NDB%20Cluster%20Installation/
 
 #### 23.4 NDB 集群的配置
 
