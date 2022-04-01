@@ -444,83 +444,43 @@ explain insert into t values (10);
 
 ### Not exists (json 属性: message)
 
-
-
 ### Plan is not read yet
-
-
 
 ### Range checked for each record (index map: N)
 
-
-
 ### Recursive
-
-
 
 ### Rematerialize
 
-
-
 ### Scaned N databases
-
-
 
 ### select tables optimized away
 
-
-
 ### Skip_open_table, Open_frm_only, Open_full_table
-
-
 
 ### Start temporary, End temporary
 
-
-
 ### unique row not found
-
-
 
 ### Using filesort
 
-
-
 ### using index
-
-
 
 ### Using index condition
 
-
-
 ### Using index for group-by
-
-
 
 ### Using index for skip scan
 
-
-
 ### Using join buffer
-
-
 
 ### Using MRR
 
-
-
 ### Using sort_union(...), Using union(...), Using intersect(...)
-
-
 
 ### Using temporary
 
-
-
 ### Using where
-
-
 
 ### Using where with pushed condition
 
