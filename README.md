@@ -22,6 +22,12 @@
 
 #### 8.8.2 [explain 输出格式](./optimization/Understanding%20the%20Query%20Execution%20Plan/EXPLAIN%20Output%20Format.md)
 
+## 12 函数和运算符
+
+### 12.10 [全文检索功能](./函数和运算符/12.10/index.md)
+
+#### 12.10.4 [全文分词](./函数和运算符/12.10/12.10.4.全文分词.md)
+
 ## 15 InnoDB 存储引擎
 
 基于 MySQL 5.7 的官方文档的 InnoDB 部分翻译，部分篇幅会有个人见解
@@ -149,18 +155,9 @@
     &nbsp;&nbsp;&nbsp;&nbsp;SQL 压缩语法警告与错误  
 - 9.2 InnoDB 页面压缩
 
-### 15.10. InnoDB 文件格式管理
+### 15.10. InnoDB 行格式
 
-- 10.1 启用文件格式
-- 10.2 验证文件格式兼容性  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InnoDB 启动时的兼容性检查  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打开表时的兼容性检查
-- 10.3 识别正在使用的文件格式
-- 10.4 修改文件格式
-
-### 15.11. InnoDB 行格式
-
-### 15.12. InnoDB 磁盘 I/O 和文件空间管理
+### 15.11. InnoDB 磁盘 I/O 和文件空间管理
 
 - 12.1 InnoDB 磁盘 I/O  
 - 12.2 文件空间管理  
@@ -168,7 +165,7 @@
 - 12.4 对表进行碎片整理
 - 12.5 使用 truncate table 回收磁盘空间
 
-### 15.13. InnoDB 和在线 DDL
+### 15.12. InnoDB 和在线 DDL
 
 - 13.1 在线 DDL 操作
 - 13.2 在线 DDL 性能和并发
@@ -177,46 +174,59 @@
 - 13.5 在线 DDL 失败条件
 - 13.6 在线 DDL 限制
 
-### 15.14. InnoDB 静态数据加密
+### 15.13. InnoDB 静态数据加密
 
-### 15.15. InnoDB 启动选项和系统变量
+### 15.14. InnoDB 启动选项和系统变量
 
-### 15.16. InnoDB 的 information_schema 表
+### 15.15. [InnoDB 的 information_schema 表](./InnoDB/15.15/index.md)
 
-- 16.1 InnoDB 的 information_schema 压缩表  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InnoDB_cmp 和 InnoDB_cmp_reset  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InnoDB_cmpmem 和 InnoDB_cmp_cmpmem_reset  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用压缩信息架构表  
-- 16.2 InnoDB information_schema 事务和锁定信息  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用 InnoDB 事务和锁定信息  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InnoDB 锁定和锁定等待信息  
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InnoDB 事务和锁定信息的持久性和一致性  
-- 16.3 InnoDB information_schema 系统表
-- 16.4 InnoDB information_schema FullText 索引表
-- 16.5 InnoDB information_schema 缓冲池表
-- 16.6 InnoDB information_schema 指标表
-- 16.7 InnoDB information_schema 临时表信息表
-- 16.8 从 information_schema.files 检索 InnoDB 表空间元数据
+#### 15.15.1 [InnoDB 的 information_schema 压缩表](./InnoDB/15.15/15.15.1/index.md)
 
-### 15.17. InnoDB 与 MySQL_Performance Schema 的集成
++  [InnoDB_cmp 和 InnoDB_cmp_reset](./InnoDB/15.15/15.15.1/15.15.1.1.INNODB_CMP和INNODB_CMP_RESET.md)
+
++ [InnoDB_cmpmem 和 InnoDB_cmp_cmpmem_reset](./InnoDB/15.15/15.15.1/15.15.1.2.INNODB_CMPMEM和INNODB_CMPMEM_RESET.md)
+
++ [使用压缩信息模式表](./InnoDB/15.15/15.15.1/15.15.1.3.使用压缩信息模式表.md)
+
+#### 15.15.2 [InnoDB information_schema 事务和锁定信息](./InnoDB/15.15/15.15.2/index.md)
+
++ [使用 InnoDB 事务和锁定信息](./InnoDB/15.15/15.15.2/15.15.2.1.使用InnoDB事务和锁定信息.md)
+
++ [InnoDB 锁定和锁定等待信息](./InnoDB/15.15/15.15.2/15.15.2.2.InnoDB锁定和锁定等待信息.md)
+
++ [InnoDB 事务和锁定信息的持久性和一致性](./InnoDB/15.15/15.15.2/15.15.2.3.InnoDB事务和锁定信息的持久性和一致性.md)
+
+#### 15.15.3 InnoDB information_schema 系统表
+
+#### 15.15.4 [InnoDB information_schema FullText 索引表](./InnoDB/15.15/15.15.4.InnoDB全文索引表.md)
+
+#### 15.15.5 InnoDB information_schema 缓冲池表
+
+#### 15.15.6 InnoDB information_schema 指标表
+
+#### 15.15.7 InnoDB information_schema 临时表信息表
+
+#### 15.15.8 从 information_schema.files 检索 InnoDB 表空间元数据
+
+### 15.16. InnoDB 与 MySQL_Performance Schema 的集成
 
 - 17.1 使用性能模式监控 InnoDB 表的 alter table 进度
 - 17.2 使用性能监控模式监控 InnoDB Mutex 等待
 
-### 15.18. InnoDB 监视器
+### 15.17. InnoDB 监视器
 
 - 18.1 InnoDB 监视器类型
 - 18.2 启用 InnoDB 监视器
 - 18.3 InnoDB 标准监视器和锁定监视器输出
 
-### 15.19. InnoDB 备份和恢复
+### 15.18. InnoDB 备份和恢复
 
 - 19.1 InnoDB 备份
 - 19.2 InnoDB 恢复
 
-### 15.20. InnoDB 和 MySQL 复制
+### 15.19. InnoDB 和 MySQL 复制
 
-### 15.21. InnoDB 内存缓存插件
+### 15.20. InnoDB 内存缓存插件
 
 - 21.1 InnoDB memcached 插件的好处
 - 21.2 InnoDB 内存缓存架构
@@ -233,7 +243,7 @@
 - 21.7 InnoDB memcached 插件内部
 - 21.8 InnoDB memcached 插件故障排查
 
-### 15.22. InnoDB 故障排查
+### 15.21. InnoDB 故障排查
 
 - 22.1 对 InnoDB I/O 问题进行故障排除
 
@@ -243,7 +253,7 @@
 
 - 22.4 InnoDB 错误处理
   
-  ### 15.23. InnoDB Limits
+  ### 15.22. InnoDB Limits
 
 ### 15.24 InnoDB Restrictions and Limitations
 
