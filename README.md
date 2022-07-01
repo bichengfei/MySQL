@@ -1,6 +1,6 @@
 # MySQL
 
-官网地址：https://dev.mysql.com/doc/refman/8.0/en/preface.html
+官网地址：https://dev.mysql.com/doc/refman/8.0/en/preface.htmlye
 
 ## 8  优化
 
